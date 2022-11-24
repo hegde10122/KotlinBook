@@ -12,7 +12,22 @@ fun main(){
       val k : String = "I am rich"
       var a  = 44.55
 
-      number = 82
+      val stud1 = Student("Bharati Ganatra",32,5245)
+      stud1.age = 45
+
+      //The below assignment will return an error because collegeId is defined as val
+     // stud1.collegeId = 5553
+
+      //The below assignment will return an error because stud1 object is defined as val
+     // stud1 = Student("Danish Kumar",23,5612)
+
+      println(stud1.age)
+      println(stud1.name)
+
+      //The instance 
+
+     var stud2 = Student("Danish Kumar",23,5612)
+
 }
 
 //In the Intellij IDE, the variables z,q and a will be underlined to denote the fact that they are variables of type "var". The "val" variables
@@ -26,5 +41,10 @@ fun main(){
 //Then it sets the value of the constant to the data string "kotlin"
 // = is the assignment operator
 
+//val variables are immutable - it means once assigned, cannot change again
+//var variables are mutable -- assignment and reassignment is possible
 
 
+class Student(var name:String,var age: Int,val collegeId:Int){
+
+}
