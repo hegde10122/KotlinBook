@@ -24,7 +24,6 @@ fun main(){
       println(stud1.age)
       println(stud1.name)
 
-      //The instance
 
      var stud2 = Student("Danish Kumar",23,5612)
 
