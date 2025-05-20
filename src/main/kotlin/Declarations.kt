@@ -27,6 +27,13 @@ fun main(){
 
      var stud2 = Student("Danish Kumar",23,5612)
 
+      val name = "Aliya"    // Kotlin infers that 'name' is of type String
+      val age = 38          // Kotlin infers that 'age' is of type Int
+      val isStudent = true  // Kotlin infers that 'isStudent' is of type Boolean
+
+      println(name::class)
+      println(age::class)
+      println(isStudent::class)
 }
 
 //In the Intellij IDE, the variables z,q and a will be underlined to denote the fact that they are variables of type "var". The "val" variables
