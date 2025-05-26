@@ -1,3 +1,5 @@
+package misc
+
 import java.math.BigInteger
 import java.math.BigDecimal
 

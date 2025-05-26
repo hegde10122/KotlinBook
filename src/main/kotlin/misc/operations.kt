@@ -1,3 +1,5 @@
+package misc
+
 fun main() {
 
     val i1 = 44

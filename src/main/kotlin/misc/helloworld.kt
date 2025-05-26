@@ -1,7 +1,4 @@
-import java.security.SecureRandom
-import javax.crypto.Cipher
-import javax.crypto.spec.GCMParameterSpec
-import javax.crypto.spec.SecretKeySpec
+package misc
 
 fun main(){
     //main() is a function denoted by the keyword fun()

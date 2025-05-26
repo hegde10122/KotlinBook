@@ -1,3 +1,5 @@
+package misc
+
 fun main() {
     val y = 5         // 0101 in binary
     val z = 3         // 0011 in binary

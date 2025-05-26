@@ -1,3 +1,5 @@
+package misc
+
 fun main() {
 
     val salary = 1000

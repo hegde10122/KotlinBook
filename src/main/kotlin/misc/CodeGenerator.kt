@@ -1,3 +1,5 @@
+package misc
+
 fun main(){
 
     var hashMap : HashMap<String, String> = HashMap<String, String>()
