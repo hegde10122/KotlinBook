@@ -27,7 +27,7 @@ fun main(){
     println(a9)
 
 
-    var b1 = countDownByStep(5,1,2)
+    var b1 = countDownByStep(-5,-9,2)
     println("Countdown $b1")
 }
 
@@ -58,22 +58,31 @@ fun calculateSumOfSquares(n: Int): Int {
     // Write your code here
     var sum = 0
     for (j in 0..n){
-       val squares = j * j
-       sum +=squares
+        val squares = j * j
+        sum +=squares
     }
     return sum
 }
+
 
 fun countDownByStep(start: Int, end: Int, step: Int): String {
 //The countDownByStep function should take three integers: start, end, and step,
 // and return a string representation of
 // the numbers from start down to end, with each step being step units apart.
-var result = ""
-for(k in start downTo end step step) {
-result += k
+    var result = ""
+    for(k in start downTo end step step) {
 
-}
+        if(start == end){
+            result+= start
+            break
+        }
+        result += k
+
+        if(k != end)
+        result += ", "
+    }
 
 
-    return result
+
+    return result.trim()
 }
